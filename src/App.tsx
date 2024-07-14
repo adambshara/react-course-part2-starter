@@ -1,5 +1,5 @@
 import "./App.css";
-import AuthProvider from "./state-management/auth/AuthProvider";
+// import AuthProvider from "./state-management/auth/AuthProvider";
 import Counter from "./state-management/counter/Counter";
 import HomePage from "./state-management/HomePage";
 import NavBar from "./state-management/NavBar";
@@ -27,13 +27,13 @@ function App() {
     // </LoginContext.Provider>
     //we will replace <LoginContext.Provider> to <AuthProvider> because
     //we have already included everything in the <AuthProvider>
-    <AuthProvider>
-      <TasksProvider>
-        <Counter />
-        <NavBar />
-        <HomePage />
-      </TasksProvider>
-    </AuthProvider>
+    // <AuthProvider>
+    <TasksProvider>
+      <Counter />
+      <NavBar />
+      <HomePage />
+    </TasksProvider>
+    // </AuthProvider>
 
     // <TasksContext.Provider value={{ user, dispatch. }}>
     //   <NavBar />
